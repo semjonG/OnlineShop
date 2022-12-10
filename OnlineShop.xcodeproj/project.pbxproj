@@ -24,6 +24,7 @@
 		04CEA157294485C2001F5B1B /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEA14F294485C2001F5B1B /* PostsService.swift */; };
 		04CEA158294485C2001F5B1B /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEA150294485C2001F5B1B /* RequestError.swift */; };
 		04CEA159294485C2001F5B1B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEA151294485C2001F5B1B /* Endpoint.swift */; };
+		04CEA15B29448AC4001F5B1B /* VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEA15A29448AC4001F5B1B /* VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		04CEA14F294485C2001F5B1B /* PostsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
 		04CEA150294485C2001F5B1B /* RequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 		04CEA151294485C2001F5B1B /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		04CEA15A29448AC4001F5B1B /* VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				04CEA14329448437001F5B1B /* App */,
 				04CEA144294484BE001F5B1B /* Resources */,
 				04CEA117294483AD001F5B1B /* ViewController.swift */,
+				04CEA15A29448AC4001F5B1B /* VC.swift */,
 				04CEA119294483AD001F5B1B /* Main.storyboard */,
 				04CEA11E294483AF001F5B1B /* LaunchScreen.storyboard */,
 				04CEA146294485C2001F5B1B /* Networking Layer */,
@@ -338,6 +341,7 @@
 				04CEA116294483AD001F5B1B /* SceneDelegate.swift in Sources */,
 				04CEA158294485C2001F5B1B /* RequestError.swift in Sources */,
 				04CEA153294485C2001F5B1B /* PostsEndpoint.swift in Sources */,
+				04CEA15B29448AC4001F5B1B /* VC.swift in Sources */,
 				04CEA156294485C2001F5B1B /* MovieService.swift in Sources */,
 				04CEA159294485C2001F5B1B /* Endpoint.swift in Sources */,
 				04CEA152294485C2001F5B1B /* MoviesEndpoint.swift in Sources */,
