@@ -16,6 +16,14 @@
 		04CEA12B294483AF001F5B1B /* OnlineShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEA12A294483AF001F5B1B /* OnlineShopTests.swift */; };
 		04CEA135294483AF001F5B1B /* OnlineShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEA134294483AF001F5B1B /* OnlineShopUITests.swift */; };
 		04CEA137294483AF001F5B1B /* OnlineShopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEA136294483AF001F5B1B /* OnlineShopUITestsLaunchTests.swift */; };
+		04CEA152294485C2001F5B1B /* MoviesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEA148294485C2001F5B1B /* MoviesEndpoint.swift */; };
+		04CEA153294485C2001F5B1B /* PostsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEA149294485C2001F5B1B /* PostsEndpoint.swift */; };
+		04CEA154294485C2001F5B1B /* TopRated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEA14B294485C2001F5B1B /* TopRated.swift */; };
+		04CEA155294485C2001F5B1B /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEA14C294485C2001F5B1B /* HTTPClient.swift */; };
+		04CEA156294485C2001F5B1B /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEA14E294485C2001F5B1B /* MovieService.swift */; };
+		04CEA157294485C2001F5B1B /* PostsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEA14F294485C2001F5B1B /* PostsService.swift */; };
+		04CEA158294485C2001F5B1B /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEA150294485C2001F5B1B /* RequestError.swift */; };
+		04CEA159294485C2001F5B1B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CEA151294485C2001F5B1B /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		04CEA130294483AF001F5B1B /* OnlineShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CEA134294483AF001F5B1B /* OnlineShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopUITests.swift; sourceTree = "<group>"; };
 		04CEA136294483AF001F5B1B /* OnlineShopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04CEA148294485C2001F5B1B /* MoviesEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesEndpoint.swift; sourceTree = "<group>"; };
+		04CEA149294485C2001F5B1B /* PostsEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsEndpoint.swift; sourceTree = "<group>"; };
+		04CEA14B294485C2001F5B1B /* TopRated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopRated.swift; sourceTree = "<group>"; };
+		04CEA14C294485C2001F5B1B /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		04CEA14E294485C2001F5B1B /* MovieService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		04CEA14F294485C2001F5B1B /* PostsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsService.swift; sourceTree = "<group>"; };
+		04CEA150294485C2001F5B1B /* RequestError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		04CEA151294485C2001F5B1B /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +115,12 @@
 		04CEA112294483AD001F5B1B /* OnlineShop */ = {
 			isa = PBXGroup;
 			children = (
-				04CEA113294483AD001F5B1B /* AppDelegate.swift */,
-				04CEA115294483AD001F5B1B /* SceneDelegate.swift */,
+				04CEA14329448437001F5B1B /* App */,
+				04CEA144294484BE001F5B1B /* Resources */,
 				04CEA117294483AD001F5B1B /* ViewController.swift */,
 				04CEA119294483AD001F5B1B /* Main.storyboard */,
-				04CEA11C294483AF001F5B1B /* Assets.xcassets */,
 				04CEA11E294483AF001F5B1B /* LaunchScreen.storyboard */,
-				04CEA121294483AF001F5B1B /* Info.plist */,
+				04CEA146294485C2001F5B1B /* Networking Layer */,
 			);
 			path = OnlineShop;
 			sourceTree = "<group>";
@@ -125,6 +140,63 @@
 				04CEA136294483AF001F5B1B /* OnlineShopUITestsLaunchTests.swift */,
 			);
 			path = OnlineShopUITests;
+			sourceTree = "<group>";
+		};
+		04CEA14329448437001F5B1B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				04CEA113294483AD001F5B1B /* AppDelegate.swift */,
+				04CEA115294483AD001F5B1B /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		04CEA144294484BE001F5B1B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04CEA11C294483AF001F5B1B /* Assets.xcassets */,
+				04CEA121294483AF001F5B1B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04CEA146294485C2001F5B1B /* Networking Layer */ = {
+			isa = PBXGroup;
+			children = (
+				04CEA147294485C2001F5B1B /* Endpoints */,
+				04CEA14A294485C2001F5B1B /* Models */,
+				04CEA14C294485C2001F5B1B /* HTTPClient.swift */,
+				04CEA14D294485C2001F5B1B /* Services */,
+				04CEA150294485C2001F5B1B /* RequestError.swift */,
+				04CEA151294485C2001F5B1B /* Endpoint.swift */,
+			);
+			path = "Networking Layer";
+			sourceTree = "<group>";
+		};
+		04CEA147294485C2001F5B1B /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				04CEA148294485C2001F5B1B /* MoviesEndpoint.swift */,
+				04CEA149294485C2001F5B1B /* PostsEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		04CEA14A294485C2001F5B1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04CEA14B294485C2001F5B1B /* TopRated.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04CEA14D294485C2001F5B1B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04CEA14E294485C2001F5B1B /* MovieService.swift */,
+				04CEA14F294485C2001F5B1B /* PostsService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +332,15 @@
 			files = (
 				04CEA118294483AD001F5B1B /* ViewController.swift in Sources */,
 				04CEA114294483AD001F5B1B /* AppDelegate.swift in Sources */,
+				04CEA157294485C2001F5B1B /* PostsService.swift in Sources */,
+				04CEA154294485C2001F5B1B /* TopRated.swift in Sources */,
+				04CEA155294485C2001F5B1B /* HTTPClient.swift in Sources */,
 				04CEA116294483AD001F5B1B /* SceneDelegate.swift in Sources */,
+				04CEA158294485C2001F5B1B /* RequestError.swift in Sources */,
+				04CEA153294485C2001F5B1B /* PostsEndpoint.swift in Sources */,
+				04CEA156294485C2001F5B1B /* MovieService.swift in Sources */,
+				04CEA159294485C2001F5B1B /* Endpoint.swift in Sources */,
+				04CEA152294485C2001F5B1B /* MoviesEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +500,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -439,12 +519,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8RR9M64TNW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OnlineShop/Info.plist;
+				INFOPLIST_FILE = OnlineShop/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,12 +548,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8RR9M64TNW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OnlineShop/Info.plist;
+				INFOPLIST_FILE = OnlineShop/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
