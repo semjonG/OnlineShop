@@ -7,9 +7,11 @@
 
 import Foundation
 
-//Интерфейсы - сервиса Movie
-//Сервис - это объект с бизнес-логика (Запросы на Movies)
+//Интерфейсы сервиса Movie
+//Сервис - это объект с бизнес-логикой (Запросы на Movies)
 
+
+// запросы по каждой тематической модельке (структуре)
 protocol MoviesServiceable {
     func getTopRated() async -> Result<TopRated, RequestError>
     func getMovieDetail(id: Int) async -> Result<Movie, RequestError>
