@@ -21,7 +21,7 @@ protocol Endpoint {
 
 extension Endpoint {
     var baseURL: String {
-        return "https://jsonplaceholder.typicode.com"
+        return "https://run.mocky.io"
     }
 }
 

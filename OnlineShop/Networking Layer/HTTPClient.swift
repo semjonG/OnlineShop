@@ -12,17 +12,18 @@ protocol HTTPClient {
     func sendRequest<T: Decodable>(endpoint: Endpoint, responseModel: T.Type) async -> Result<T, RequestError>
 }
 
-//Реализация - универсального запроса
+//Реализация универсального запроса
 extension HTTPClient {
     func sendRequest<T: Decodable>(
         endpoint: Endpoint,
         responseModel: T.Type
     ) async -> Result<T, RequestError> {
         
+
         guard let url = URL(string: endpoint.baseURL + endpoint.path) else {
             return .failure(.invalidURL)
         }
-        
+
         var request = URLRequest(url: url)
         request.httpMethod = endpoint.method.rawValue
         request.allHTTPHeaderFields = endpoint.header
