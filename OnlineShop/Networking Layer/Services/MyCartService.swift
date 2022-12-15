@@ -9,7 +9,6 @@ import Foundation
 
 protocol MyCartServiceable {
     func getMyCart() async -> Result<MyCartResponse, RequestError>
-
 }
 
 struct MyCartService: HTTPClient, MyCartServiceable {
