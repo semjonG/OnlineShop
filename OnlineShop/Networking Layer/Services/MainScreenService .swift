@@ -9,7 +9,6 @@ import Foundation
 
 protocol MainScreenServiceable {
     func getMainScreen() async -> Result<MainScreenResponse, RequestError>
-
 }
 
 struct MainScreenService: HTTPClient, MainScreenServiceable {
