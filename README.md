@@ -1,3 +1,3 @@
 # OnlineShop
 
-Status: under development
+Status: under development.
